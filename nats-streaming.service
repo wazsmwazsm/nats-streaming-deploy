@@ -7,7 +7,7 @@ PrivateTmp=true
 Type=simple
 ExecStart=/usr/local/nats/nats-streaming/nats-streaming-server \
     -c /usr/local/nats/nats-streaming/nats-streaming.conf
-ExecStop=/bin/kill -USR1 $MAINPID && /bin/kill -TERM $MAINPID
+ExecStop=/bin/kill -TERM $MAINPID
 User=nats
 Group=nats
 [Install]
