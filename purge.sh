@@ -24,10 +24,9 @@ read -r -p "Delete all file? [Y/n] " input
 case $input in
     [yY][eE][sS]|[yY])
 		rm -rf /usr/local/nats/nats-streaming
-		rm -rf /var/log/nats/nats-streaming/server
-		rm -rf /var/log/nats/nats-streaming/cluster
+		rm -rf /var/log/nats/nats-streaming
 		rm -rf /var/local/nats/nats-streaming
-		rm -rf /var/run/nats
+		rm -f /var/run/nats/nats-streaming.pid
 		echo "=====> file deleted"
 		;;
 
