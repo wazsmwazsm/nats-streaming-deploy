@@ -1,6 +1,6 @@
 # Deploy nats-streaming
 
-Make a simple 3 node nats-streaming cluster.
+Create a simple 3 node nats-streaming cluster.
 
 Prepare 3 server, node a, node b, node c.
 
