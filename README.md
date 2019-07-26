@@ -31,6 +31,15 @@ User=nats
 Group=nats
 ...
 ```
+change deploy.sh
+```bash
+...
+chown -R nats:nats /usr/local/nats/
+chown -R nats:nats /var/log/nats/
+chown -R nats:nats /var/local/nats/
+chown -R nats:nats /var/run/nats
+...
+```
 
 ## deploy
 ```bash

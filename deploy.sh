@@ -8,21 +8,21 @@ if [[ $node = "" ]]; then
 fi
 
 # nats-streaming dir
-echo "=====> make dir..."
+echo "=====> cteate dir..."
 mkdir -p /usr/local/nats/nats-streaming
 mkdir -p /var/log/nats/nats-streaming/server
 mkdir -p /var/log/nats/nats-streaming/cluster
 mkdir -p /var/local/nats/nats-streaming
 mkdir -p /var/run/nats
-echo "=====> dir maked"
+echo "=====> dir cteated"
 
-# nats policy
-echo "=====> authorize nats..."
-chown -R nats:nats /usr/local/nats/
-chown -R nats:nats /var/log/nats/
-chown -R nats:nats /var/local/nats/
-chown -R nats:nats /var/run/nats
-echo "=====> nats authorized"
+# dir authorize
+echo "=====> dir authorize..."
+chown -R daemon:daemon /usr/local/nats/
+chown -R daemon:daemon /var/log/nats/
+chown -R daemon:daemon /var/local/nats/
+chown -R daemon:daemon /var/run/nats
+echo "=====> dir authorized"
 # copy bin file
 echo "=====> copy bin file..."
 cp nats-streaming-server-v0.15.1-linux-amd64/nats-streaming-server \
