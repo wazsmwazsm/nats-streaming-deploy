@@ -4,7 +4,7 @@ Create a simple 3 node nats-streaming cluster.
 
 Prepare 3 server, node a, node b, node c.
 
-> All steps below you shold run in each server and run as root.
+> All steps below you should run in each server and run as root.
 
 ## install
 ```bash
@@ -17,6 +17,20 @@ chmod +x *.sh
 ## change config
 
 change config nats-streaming-(a/b/c).conf for your situation.
+
+if you need a daemon user run nats-streaming, do below (example user "nats"):
+
+```bash
+# if daemon user exists, skip this step
+adduser --system --group --no-create-home --shell /bin/false nats
+```
+change nats-streaming.service:
+```bash
+...
+User=nats
+Group=nats
+...
+```
 
 ## deploy
 ```bash
@@ -39,6 +53,6 @@ default dir:
 
 if you want to change these dir, you should modify:
 - deploy.sh
+- purge.sh
 - nats-streaming-xx.conf
 - nats-streaming.service
-- purge.sh

@@ -7,11 +7,6 @@ if [[ $node = "" ]]; then
     exit
 fi
 
-# add user:group nats:nats
-echo "=====> add user..."
-adduser --system --group --no-create-home --shell /bin/false nats
-echo "=====> user added"
-
 # nats-streaming dir
 echo "=====> make dir..."
 mkdir -p /usr/local/nats/nats-streaming
