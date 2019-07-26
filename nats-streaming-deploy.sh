@@ -23,9 +23,7 @@ chown -R nats:nats /var/log/nats/
 chown -R nats:nats /var/local/nats/
 chown -R nats:nats /var/run/nats
 
-# get bin file
-wget https://github.com/nats-io/nats-streaming-server/releases/download/v0.15.1/nats-streaming-server-v0.15.1-linux-amd64.zip
-unzip nats-streaming-server-v0.15.1-linux-amd64.zip
+# copy bin file
 cp nats-streaming-server-v0.15.1-linux-amd64/nats-streaming-server \
     /usr/local/nats/nats-streaming/
 
