@@ -5,7 +5,7 @@ echo "Nats-streaming purge..."
 read -r -p "Stop serve? [Y/n] " input
 case $input in
     [yY][eE][sS]|[yY])
-		kill -TERM `cat /var/run/nats/nats-streaming.pid`
+		kill -TERM `cat /usr/local/nats/nats-streaming/var/run/nats-streaming.pid`
 		echo "=====> serve stoped"
 		;;
 
