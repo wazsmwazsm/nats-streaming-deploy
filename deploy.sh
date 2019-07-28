@@ -13,6 +13,7 @@ mkdir -p /usr/local/nats/nats-streaming
 mkdir -p /var/log/nats/nats-streaming/server
 mkdir -p /var/log/nats/nats-streaming/cluster
 mkdir -p /var/local/nats/nats-streaming
+mkdir -p /usr/local/nats/nats-streaming/var/run/
 echo "=====> dir cteated"
 
 # dir authorize
