@@ -26,7 +26,7 @@ case $input in
 		rm -rf /usr/local/nats/nats-streaming
 		rm -rf /var/log/nats/nats-streaming
 		rm -rf /var/local/nats/nats-streaming
-		rm -f /var/run/nats/nats-streaming.pid
+		rm -f /var/run/nats-streaming.pid
 		echo "=====> file deleted"
 		;;
 

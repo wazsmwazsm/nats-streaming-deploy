@@ -13,7 +13,6 @@ mkdir -p /usr/local/nats/nats-streaming
 mkdir -p /var/log/nats/nats-streaming/server
 mkdir -p /var/log/nats/nats-streaming/cluster
 mkdir -p /var/local/nats/nats-streaming
-mkdir -p /var/run/nats
 echo "=====> dir cteated"
 
 # dir authorize
@@ -21,7 +20,6 @@ echo "=====> dir authorize..."
 chown -R daemon:daemon /usr/local/nats/
 chown -R daemon:daemon /var/log/nats/
 chown -R daemon:daemon /var/local/nats/
-chown -R daemon:daemon /var/run/nats
 echo "=====> dir authorized"
 # copy bin file
 echo "=====> copy bin file..."
