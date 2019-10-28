@@ -10,5 +10,7 @@ ExecStart=/usr/local/nats/nats-streaming/nats-streaming-server \
 ExecStop=/bin/kill -TERM $MAINPID
 User=daemon
 Group=daemon
+Restart=on-failure
+
 [Install]
 WantedBy=multi-user.target
